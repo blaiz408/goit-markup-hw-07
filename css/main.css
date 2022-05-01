@@ -103,8 +103,7 @@ address {
   transition: background-color var(--transition);
 }
 
-.modal-button:hover,
-.modal-button:focus {
+.modal-button:hover, .modal-button:focus {
   background-color: #188CE8;
 }
 
@@ -126,15 +125,14 @@ address {
   transition: background-color var(--transition), color var(--transition);
 }
 
+.social-list-link:hover, .social-list-link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color-theme-dark);
+}
+
 .social-list-icon {
   fill: currentColor;
   transition: fill var(--transition);
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-text-color-theme-dark);
 }
 
 .logo {
@@ -217,6 +215,10 @@ address {
   pointer-events: none;
 }
 
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0) rotate(135deg);
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -227,10 +229,6 @@ address {
   background-color: #ffffff;
   transition: transform 500ms linear;
   padding: 40px;
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0) rotate(135deg);
 }
 
 .modal-close-btn {
@@ -249,13 +247,13 @@ address {
   cursor: pointer;
 }
 
-.modal-close-icon {
-  transition: fill var(--transition);
-}
-
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
   fill: var(--accent-color);
+}
+
+.modal-close-icon {
+  transition: fill var(--transition);
 }
 
 .modal-description {
@@ -301,10 +299,14 @@ address {
   cursor: pointer;
 }
 
-.contact-form-input:hover,
-.contact-form-input:focus {
+.contact-form-input:hover, .contact-form-input:focus {
   outline: none;
   border-color: var(--accent-color);
+}
+
+.contact-form-input:hover + .modal-input-icon,
+.contact-form-input:focus + .modal-input-icon {
+  fill: var(--accent-color);
 }
 
 .modal-input-icon {
@@ -314,11 +316,6 @@ address {
   left: 12px;
   transform: translateY(-50%);
   transition: fill var(--transition);
-}
-
-.contact-form-input:hover + .modal-input-icon,
-.contact-form-input:focus + .modal-input-icon {
-  fill: var(--accent-color);
 }
 
 .contact-form-massage {
@@ -418,8 +415,10 @@ address {
   transition: color var(--transition);
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus,
+.nav-list-link:hover, .nav-list-link:focus {
+  color: var(--accent-color);
+}
+
 .active-page {
   color: var(--accent-color);
 }
@@ -552,13 +551,12 @@ address {
   transition: color var(--transition);
 }
 
-.clients-icon {
-  fill: currentColor;
+.clients-list-link:hover, .clients-list-link:focus {
+  color: var(--accent-color);
 }
 
-.clients-list-link:hover,
-.clients-list-link:focus {
-  color: var(--accent-color);
+.clients-icon {
+  fill: currentColor;
 }
 
 .footer {
@@ -595,8 +593,7 @@ address {
   color: var(--primary-text-color-theme-dark);
 }
 
-.address-list-link:hover,
-.address-list-link:focus {
+.address-list-link:hover, .address-list-link:focus {
   color: var(--accent-color);
 }
 
@@ -739,8 +736,7 @@ address {
   transition: box-shadow var(--transition);
 }
 
-.project-list-link:hover,
-.project-list-link:focus {
+.project-list-link:hover, .project-list-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /*# sourceMappingURL=main.css.map */

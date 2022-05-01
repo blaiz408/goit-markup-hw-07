@@ -26,15 +26,15 @@
 .address-list-link {
     color: var(--secondary-text-color-theme-dark);
     transition: color var(--transition);
-}
 
-.address-list-link[target="_blank"] {
-    color: var(--primary-text-color-theme-dark);
-}
+    &[target="_blank"] {
+        color: var(--primary-text-color-theme-dark);
+    }
 
-.address-list-link:hover,
-.address-list-link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    } 
 }
 
 .footer-item:not(:last-child) {

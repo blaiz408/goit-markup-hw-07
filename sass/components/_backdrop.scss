@@ -12,6 +12,10 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+
+    .modal {
+        transform: translate(-50%, -50%) scale(0) rotate(135deg);
+    }
 }
 
 .modal {
@@ -24,10 +28,6 @@
     background-color: #ffffff;
     transition: transform 500ms linear;
     padding: 40px;
-}
-
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0) rotate(135deg);
 }
 
 .modal-close-btn {
@@ -44,15 +44,15 @@
     background-color: transparent;
     padding: 0;
     cursor: pointer;
+
+    &:hover .modal-close-icon,
+    &:focus .modal-close-icon {
+        fill: var(--accent-color);
+    }
 }
 
 .modal-close-icon {
     transition: fill var(--transition);
-}
-
-.modal-close-btn:hover .modal-close-icon,
-.modal-close-btn:focus .modal-close-icon {
-    fill: var(--accent-color);
 }
 
 .modal-description {
@@ -96,12 +96,16 @@
     padding-left: 42px;
     transition: border-color var(--transition);
     cursor: pointer;
-}
 
-.contact-form-input:hover,
-.contact-form-input:focus {
-    outline: none;
-    border-color: var(--accent-color);
+    &:hover,
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
+    &:hover+.modal-input-icon,
+    &:focus+.modal-input-icon {
+        fill: var(--accent-color);
+    }
 }
 
 .modal-input-icon {
@@ -111,11 +115,6 @@
     left: 12px;
     transform: translateY(-50%);
     transition: fill var(--transition)
-}
-
-.contact-form-input:hover+.modal-input-icon,
-.contact-form-input:focus+.modal-input-icon {
-    fill: var(--accent-color);
 }
 
 .contact-form-massage {

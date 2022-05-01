@@ -14,6 +14,12 @@
     background-color: rgba(255, 255, 255, 0.1);
     color: #afb1b8;
     transition: background-color var(--transition), color var(--transition);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--primary-text-color-theme-dark);
+    }
 }
 
 .social-list-icon {
@@ -21,8 +27,3 @@
     transition: fill var(--transition);
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
-    background-color: var(--accent-color);
-    color: var(--primary-text-color-theme-dark);
-}

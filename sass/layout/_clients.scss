@@ -11,13 +11,13 @@
     color: #afb1b8;
     border-radius: 4px;
     transition: color var(--transition);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .clients-icon {
     fill: currentColor;
-}
-
-.clients-list-link:hover,
-.clients-list-link:focus {
-    color: var(--accent-color);
 }
