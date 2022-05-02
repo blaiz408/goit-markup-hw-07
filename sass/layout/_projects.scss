@@ -23,10 +23,21 @@
     transition: transform var(--transition);
 }
 
-.project-list-link:hover .project-overlay-description,
-.project-list-link:focus .project-overlay-description {
-    transform: translateY(0%);
+.project-list-link {
+    display: block;
+    transition: box-shadow var(--transition);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    &:hover .project-overlay-description,
+    &:focus .project-overlay-description {
+        transform: translateY(0%);
+    }
 }
+
 
 .project-description {
     padding-top: 20px;
@@ -52,14 +63,5 @@
     line-height: 1.88;
 }
 
-.project-list-link {
-    display: block;
-    transition: box-shadow var(--transition);
 
-    &:hover,
-    &:focus {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-            1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
-}
 

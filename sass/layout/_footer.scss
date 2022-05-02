@@ -13,9 +13,11 @@
     margin-bottom: 9px;
 }
 
-.address-place:hover,
-.address-place:focus {
-    color: var(--accent-color);
+.address-place {
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .address-list-link {

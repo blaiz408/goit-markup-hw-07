@@ -121,13 +121,13 @@
     resize: none;
     height: 120px;
     padding: 12px 16px;
-}
 
-.contact-form-massage::placeholder {
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
 
 .contact-form-checkbox-label {
@@ -159,12 +159,13 @@
     color: var(--accent-color);
     text-decoration: underline;
 }
-
-.contact-form-checkbox:focus+label>.checkbox-window {
-    outline: 1px solid var(--secondary-text-color-theme-light);
-}
-
-.contact-form-checkbox:checked+label>.checkbox-window {
-    background-color: var(--accent-color);
-    border-color: transparent;
+.contact-form-checkbox {
+    &:focus+label>.checkbox-window {
+        outline: 1px solid var(--secondary-text-color-theme-light);
+    }
+    
+    &:checked+label>.checkbox-window {
+        background-color: var(--accent-color);
+        border-color: transparent;
+    }
 }
