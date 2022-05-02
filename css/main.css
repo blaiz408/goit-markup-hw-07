@@ -144,8 +144,19 @@ address {
   color: var(--accent-color);
 }
 
-.header-logo-part {
+.header__logo {
+  margin-right: 92px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header__logo_part {
   color: var(--secondary-text-color-theme-light);
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-logo-part {
@@ -380,12 +391,6 @@ address {
   align-items: center;
 }
 
-.header-logo {
-  margin-right: 92px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
 .navigation {
   display: flex;
   align-items: center;
@@ -397,11 +402,11 @@ address {
   color: var(--secondary-text-color-theme-light);
 }
 
-.nav-list-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-list-link {
+.nav-list__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -415,7 +420,7 @@ address {
   transition: color var(--transition);
 }
 
-.nav-list-link:hover, .nav-list-link:focus {
+.nav-list__link:hover, .nav-list__link:focus {
   color: var(--accent-color);
 }
 
@@ -439,12 +444,12 @@ address {
   margin-left: auto;
 }
 
-.contact-list-icon {
+.contact-list__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.contact-list-item:not(:last-child) {
+.contact-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -568,11 +573,6 @@ address {
 .footer-container {
   display: flex;
   align-items: baseline;
-}
-
-.footer-logo {
-  display: block;
-  margin-bottom: 20px;
 }
 
 .address-list-item:not(:last-child) {

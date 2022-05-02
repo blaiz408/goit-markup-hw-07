@@ -8,11 +8,7 @@
     align-items: center;
 }
 
-.header-logo {
-    margin-right: 92px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
+
 
 .navigation {
     display: flex;
@@ -25,11 +21,11 @@
     color: var(--secondary-text-color-theme-light);
 }
 
-.nav-list-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.nav-list-link {
+.nav-list__link {
     display: flex;
     align-items: center;
     padding-top: 32px;
@@ -68,11 +64,11 @@
     margin-left: auto;
 }
 
-.contact-list-icon {
+.contact-list__icon {
     margin-right: 10px;
     fill: currentColor;
 }
 
-.contact-list-item:not(:last-child) {
+.contact-list__item:not(:last-child) {
     margin-right: 50px;
 }
